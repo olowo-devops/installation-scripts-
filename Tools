@@ -1,1 +1,20 @@
+Jenkins installation guide
 
+# install java11
+# Jenkins requires Java to run. If you haven't installed Java on your system, you can install it using the following command:
+apt search openjdk 
+apt install openjdk-11-jdk-headless
+# install jenkins
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+jenkins –version
+# Once the installation is complete, you can start Jenkins using the following command:
+systemctl start jenkins
+# You can check the status of Jenkins using the following command:
+sudo systemctl status jenkins
+By default, Jenkins runs on port 8080. You can access Jenkins by opening your web browser and entering the URL http://<your-server-IP>:8080.
