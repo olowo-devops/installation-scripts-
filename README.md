@@ -1,5 +1,5 @@
-- 👋 Hi, we are the Olowo Devops team.
-- 👀 We are commited to growing our DevOps and Cloud skills
+- 👋 Hi, welcome to the Olowo Devops team.
+- 👀 We are a group of commited-likeminded Tech enthusiast, aspiring to help simplify the world through automating repetitive task leveraging our DevOps and Cloud craft.
 - 🌱 We collaborate and share ideas here on everything DevOps/Cloud
 - 💞️ DevOps
 - 📫 #Olowo
